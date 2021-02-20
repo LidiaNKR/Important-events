@@ -12,5 +12,8 @@ struct HBPerson {
     let surname: String
     let happyBirthdayDate: String
     
+    var fullName: String {
+        "\(name) \(surname)"
+    }
     
 }

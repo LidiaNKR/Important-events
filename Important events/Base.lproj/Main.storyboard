@@ -42,12 +42,12 @@
             </objects>
             <point key="canvasLocation" x="-4" y="125"/>
         </scene>
-        <!--Item-->
+        <!--Birthdays-->
         <scene sceneID="LnE-ns-k1V">
             <objects>
                 <tableViewController id="baK-fZ-dJp" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oUW-xw-dhV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -65,7 +65,8 @@
                             <outlet property="delegate" destination="baK-fZ-dJp" id="640-p7-W3o"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="czN-5B-dul"/>
+                    <tabBarItem key="tabBarItem" title="Birthdays" image="person.2.square.stack.fill" catalog="system" id="czN-5B-dul"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <segue destination="TVL-XP-ZEm" kind="show" identifier="HappyBirthday" id="JC4-HR-PnW"/>
                     </connections>
@@ -79,7 +80,7 @@
             <objects>
                 <viewController id="TVL-XP-ZEm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dCm-8b-dUu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="abx-oP-yOb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -88,10 +89,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7o-5T-hJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1494" y="-88"/>
+            <point key="canvasLocation" x="1516" y="-88"/>
         </scene>
     </scenes>
     <resources>
+        <image name="person.2.square.stack.fill" catalog="system" width="113" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
