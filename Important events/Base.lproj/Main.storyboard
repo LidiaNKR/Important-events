@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-723" y="125"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="pRQ-4d-gXQ">
             <objects>
-                <tabBarController id="2gW-Nt-8Xg" sceneMemberID="viewController">
+                <tabBarController id="2gW-Nt-8Xg" customClass="TabBarViewController" customModule="Important_events" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="I4Z-Ax-EMX"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M85-PG-vQE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -45,7 +45,7 @@
         <!--Birthdays-->
         <scene sceneID="LnE-ns-k1V">
             <objects>
-                <tableViewController id="baK-fZ-dJp" sceneMemberID="viewController">
+                <tableViewController id="baK-fZ-dJp" customClass="BirthdayListViewController" customModule="Important_events" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oUW-xw-dhV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
