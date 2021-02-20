@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8634DC625E149DF0097A6C0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8634DC525E149DF0097A6C0 /* DataManager.swift */; };
 		F8F7B9E525E045A5006DEAEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7B9E425E045A5006DEAEF /* AppDelegate.swift */; };
 		F8F7B9E725E045A5006DEAEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7B9E625E045A5006DEAEF /* SceneDelegate.swift */; };
 		F8F7B9E925E045A5006DEAEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7B9E825E045A5006DEAEF /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8634DC525E149DF0097A6C0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		F8F7B9E125E045A5006DEAEF /* Important events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Important events.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F7B9E425E045A5006DEAEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8F7B9E625E045A5006DEAEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				F8F7B9E625E045A5006DEAEF /* SceneDelegate.swift */,
 				F8F7B9E825E045A5006DEAEF /* ViewController.swift */,
 				F8F7B9EA25E045A5006DEAEF /* Main.storyboard */,
+				F8634DC525E149DF0097A6C0 /* DataManager.swift */,
 				F8F7B9ED25E045A5006DEAEF /* Assets.xcassets */,
 				F8F7B9EF25E045A5006DEAEF /* LaunchScreen.storyboard */,
 				F8F7B9F225E045A5006DEAEF /* Info.plist */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8F7B9E925E045A5006DEAEF /* ViewController.swift in Sources */,
+				F8634DC625E149DF0097A6C0 /* DataManager.swift in Sources */,
 				F8F7B9E525E045A5006DEAEF /* AppDelegate.swift in Sources */,
 				F8F7B9E725E045A5006DEAEF /* SceneDelegate.swift in Sources */,
 			);
