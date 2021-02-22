@@ -13,6 +13,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="321-Ib-Spa">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.94729536800000003" green="0.79300911730000001" blue="0.87194129590000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="2gW-Nt-8Xg" kind="relationship" relationship="rootViewController" id="rxL-y1-vbi"/>
@@ -32,10 +35,23 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
+                    <connections>
+                        <segue destination="dRj-9L-JpI" kind="relationship" relationship="viewControllers" id="lMy-C9-Qpb"/>
+                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GJs-At-BR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="154" y="125"/>
+        </scene>
+        <!--Event-->
+        <scene sceneID="Woo-Nx-jbC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Event" id="dRj-9L-JpI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="zGJ-gy-XRe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P5d-bm-RPe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="622" y="182"/>
         </scene>
     </scenes>
 </document>
