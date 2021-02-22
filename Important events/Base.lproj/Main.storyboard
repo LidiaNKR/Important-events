@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-723" y="125"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--View Controller-->
         <scene sceneID="pRQ-4d-gXQ">
             <objects>
-                <tabBarController id="2gW-Nt-8Xg" sceneMemberID="viewController">
+                <tabBarController id="2gW-Nt-8Xg" customClass="ViewController" customModule="Important_events" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="I4Z-Ax-EMX"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M85-PG-vQE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>

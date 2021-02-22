@@ -7,7 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITabBarController {
+    let person = Person.getContactList()
 
     override func viewDidLoad() {
         super.viewDidLoad()
