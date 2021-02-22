@@ -8,11 +8,20 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
+    
+    var hBPersons = HBPerson.getBirthdaysList()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tabBar.items?.append(contentsOf: "BirthdaysList")
+        setupViewControllers(with: hBPersons)
         
+    }
+    
+    private func setupViewControllers(with hBPersons: [HBPerson]) {
+        let birthdayListVC = viewControllers?.first as! BirthdayListViewController
+        navigationItem.title = "Birthday list"
+        
+        birthdayListVC.hBPersons = hBPersons
     }
 
 

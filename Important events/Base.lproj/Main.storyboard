@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ylK-75-YTb">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -52,10 +52,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonsBirthday" id="Ti8-fS-QNM">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ti8-fS-QNM" id="j17-hI-Z2d">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -75,21 +75,58 @@
             </objects>
             <point key="canvasLocation" x="767" y="-88"/>
         </scene>
-        <!--View Controller-->
+        <!--Person info-->
         <scene sceneID="ECx-fp-TTj">
             <objects>
-                <viewController id="TVL-XP-ZEm" sceneMemberID="viewController">
+                <viewController id="TVL-XP-ZEm" customClass="BirthdayDescriptionViewController" customModule="Important_events" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dCm-8b-dUu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vkG-78-D52">
+                                <rect key="frame" x="16" y="20" width="382" height="406.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qvk-VX-3o7">
+                                        <rect key="frame" x="39" y="0.0" width="304" height="304"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qvk-VX-3o7" secondAttribute="height" multiplier="1:1" id="44b-DB-UOR"/>
+                                            <constraint firstAttribute="height" constant="304" id="YhL-08-deY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rby-5a-ooE">
+                                        <rect key="frame" x="156.66666666666666" y="324" width="68.666666666666657" height="34.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4S-bq-PP5">
+                                        <rect key="frame" x="164" y="378.66666666666669" width="54.333333333333343" height="27.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="abx-oP-yOb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="abx-oP-yOb" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vkG-78-D52" secondAttribute="bottom" constant="16" id="GFV-Pv-LKV"/>
+                            <constraint firstItem="vkG-78-D52" firstAttribute="leading" secondItem="abx-oP-yOb" secondAttribute="leading" constant="16" id="erF-fx-1Nd"/>
+                            <constraint firstItem="vkG-78-D52" firstAttribute="top" secondItem="abx-oP-yOb" secondAttribute="top" constant="20" id="mYA-vN-stm"/>
+                            <constraint firstItem="abx-oP-yOb" firstAttribute="trailing" secondItem="vkG-78-D52" secondAttribute="trailing" constant="16" id="rCd-Bd-WY9"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Wiy-Sz-jLC"/>
+                    <navigationItem key="navigationItem" title="Person info" id="Wiy-Sz-jLC"/>
+                    <connections>
+                        <outlet property="bDatePersonLabel" destination="d4S-bq-PP5" id="rhU-ur-hkN"/>
+                        <outlet property="hBPersonLabel" destination="Rby-5a-ooE" id="54E-Lr-kmA"/>
+                        <outlet property="imagePerson" destination="qvk-VX-3o7" id="k75-fK-yQ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7o-5T-hJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1516" y="-88"/>
+            <point key="canvasLocation" x="1514.4000000000001" y="-88.605697151424295"/>
         </scene>
     </scenes>
     <resources>
