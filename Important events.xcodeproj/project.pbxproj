@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		78C0CD5125E3C09D00AA0780 /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C0CD5025E3C09D00AA0780 /* Event.storyboard */; };
-		78C0CD5425E3C0E300AA0780 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0CD5325E3C0E300AA0780 /* EventTableViewController.swift */; };
-		78C0CD5925E3C4E200AA0780 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0CD5825E3C4E200AA0780 /* Person.swift */; };
+		F8519CB125E14DC800E8971B /* HBPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8519CB025E14DC800E8971B /* HBPerson.swift */; };
+		F8519CBA25E1579000E8971B /* BirthdayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8519CB925E1579000E8971B /* BirthdayListViewController.swift */; };
 		F8634DC625E149DF0097A6C0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8634DC525E149DF0097A6C0 /* DataManager.swift */; };
+		F8CF1E2525E3E8F900D60E1A /* BirthdayDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF1E2425E3E8F900D60E1A /* BirthdayDescriptionViewController.swift */; };
 		F8F7B9E525E045A5006DEAEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7B9E425E045A5006DEAEF /* AppDelegate.swift */; };
 		F8F7B9E725E045A5006DEAEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7B9E625E045A5006DEAEF /* SceneDelegate.swift */; };
-		F8F7B9E925E045A5006DEAEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7B9E825E045A5006DEAEF /* ViewController.swift */; };
+		F8F7B9E925E045A5006DEAEF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7B9E825E045A5006DEAEF /* TabBarViewController.swift */; };
 		F8F7B9EC25E045A5006DEAEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7B9EA25E045A5006DEAEF /* Main.storyboard */; };
 		F8F7B9EE25E045A5006DEAEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8F7B9ED25E045A5006DEAEF /* Assets.xcassets */; };
 		F8F7B9F125E045A5006DEAEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7B9EF25E045A5006DEAEF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		78C0CD5025E3C09D00AA0780 /* Event.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Event.storyboard; sourceTree = "<group>"; };
-		78C0CD5325E3C0E300AA0780 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
-		78C0CD5825E3C4E200AA0780 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F8519CB025E14DC800E8971B /* HBPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBPerson.swift; sourceTree = "<group>"; };
+		F8519CB925E1579000E8971B /* BirthdayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayListViewController.swift; sourceTree = "<group>"; };
 		F8634DC525E149DF0097A6C0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F8CF1E2425E3E8F900D60E1A /* BirthdayDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayDescriptionViewController.swift; sourceTree = "<group>"; };
 		F8F7B9E125E045A5006DEAEF /* Important events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Important events.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F7B9E425E045A5006DEAEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8F7B9E625E045A5006DEAEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F8F7B9E825E045A5006DEAEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8F7B9E825E045A5006DEAEF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		F8F7B9EB25E045A5006DEAEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8F7B9ED25E045A5006DEAEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8F7B9F025E045A5006DEAEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,12 +66,13 @@
 			children = (
 				F8F7B9E425E045A5006DEAEF /* AppDelegate.swift */,
 				F8F7B9E625E045A5006DEAEF /* SceneDelegate.swift */,
-				F8F7B9E825E045A5006DEAEF /* ViewController.swift */,
-				78C0CD5325E3C0E300AA0780 /* EventTableViewController.swift */,
-				78C0CD5825E3C4E200AA0780 /* Person.swift */,
+				F8F7B9E825E045A5006DEAEF /* TabBarViewController.swift */,
 				F8F7B9EA25E045A5006DEAEF /* Main.storyboard */,
 				78C0CD5025E3C09D00AA0780 /* Event.storyboard */,
 				F8634DC525E149DF0097A6C0 /* DataManager.swift */,
+				F8519CB025E14DC800E8971B /* HBPerson.swift */,
+				F8519CB925E1579000E8971B /* BirthdayListViewController.swift */,
+				F8CF1E2425E3E8F900D60E1A /* BirthdayDescriptionViewController.swift */,
 				F8F7B9ED25E045A5006DEAEF /* Assets.xcassets */,
 				F8F7B9EF25E045A5006DEAEF /* LaunchScreen.storyboard */,
 				F8F7B9F225E045A5006DEAEF /* Info.plist */,
@@ -150,10 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78C0CD5925E3C4E200AA0780 /* Person.swift in Sources */,
-				F8F7B9E925E045A5006DEAEF /* ViewController.swift in Sources */,
+				F8F7B9E925E045A5006DEAEF /* TabBarViewController.swift in Sources */,
 				F8634DC625E149DF0097A6C0 /* DataManager.swift in Sources */,
+				F8519CBA25E1579000E8971B /* BirthdayListViewController.swift in Sources */,
+				F8CF1E2525E3E8F900D60E1A /* BirthdayDescriptionViewController.swift in Sources */,
 				F8F7B9E525E045A5006DEAEF /* AppDelegate.swift in Sources */,
+				F8519CB125E14DC800E8971B /* HBPerson.swift in Sources */,
 				F8F7B9E725E045A5006DEAEF /* SceneDelegate.swift in Sources */,
 				78C0CD5425E3C0E300AA0780 /* EventTableViewController.swift in Sources */,
 			);

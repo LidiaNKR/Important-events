@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ylK-75-YTb">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,9 +14,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="321-Ib-Spa">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.94729536800000003" green="0.79300911730000001" blue="0.87194129590000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="2gW-Nt-8Xg" kind="relationship" relationship="rootViewController" id="rxL-y1-vbi"/>
@@ -25,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-723" y="125"/>
         </scene>
-        <!--View Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="pRQ-4d-gXQ">
             <objects>
-                <tabBarController id="2gW-Nt-8Xg" customClass="ViewController" customModule="Important_events" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="2gW-Nt-8Xg" customClass="TabBarViewController" customModule="Important_events" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="I4Z-Ax-EMX"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M85-PG-vQE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -37,21 +35,105 @@
                     </tabBar>
                     <connections>
                         <segue destination="dRj-9L-JpI" kind="relationship" relationship="viewControllers" id="lMy-C9-Qpb"/>
+                        <segue destination="baK-fZ-dJp" kind="relationship" relationship="viewControllers" id="fFV-cp-Qjb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GJs-At-BR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="154" y="125"/>
+            <point key="canvasLocation" x="-4" y="125"/>
         </scene>
-        <!--Event-->
-        <scene sceneID="Woo-Nx-jbC">
+        <!--Birthdays-->
+        <scene sceneID="LnE-ns-k1V">
             <objects>
-                <viewControllerPlaceholder storyboardName="Event" id="dRj-9L-JpI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="zGJ-gy-XRe"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P5d-bm-RPe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tableViewController id="baK-fZ-dJp" customClass="BirthdayListViewController" customModule="Important_events" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oUW-xw-dhV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonsBirthday" id="Ti8-fS-QNM">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ti8-fS-QNM" id="j17-hI-Z2d">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="baK-fZ-dJp" id="WMi-qR-Vlm"/>
+                            <outlet property="delegate" destination="baK-fZ-dJp" id="640-p7-W3o"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Birthdays" image="person.2.square.stack.fill" catalog="system" id="czN-5B-dul"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <segue destination="TVL-XP-ZEm" kind="show" identifier="HappyBirthday" id="JC4-HR-PnW"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zDW-I8-d0D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622" y="182"/>
+            <point key="canvasLocation" x="767" y="-88"/>
+        </scene>
+        <!--Person info-->
+        <scene sceneID="ECx-fp-TTj">
+            <objects>
+                <viewController id="TVL-XP-ZEm" customClass="BirthdayDescriptionViewController" customModule="Important_events" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dCm-8b-dUu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vkG-78-D52">
+                                <rect key="frame" x="16" y="20" width="382" height="406.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qvk-VX-3o7">
+                                        <rect key="frame" x="39" y="0.0" width="304" height="304"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qvk-VX-3o7" secondAttribute="height" multiplier="1:1" id="44b-DB-UOR"/>
+                                            <constraint firstAttribute="height" constant="304" id="YhL-08-deY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rby-5a-ooE">
+                                        <rect key="frame" x="156.66666666666666" y="324" width="68.666666666666657" height="34.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4S-bq-PP5">
+                                        <rect key="frame" x="164" y="378.66666666666669" width="54.333333333333343" height="27.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="abx-oP-yOb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="abx-oP-yOb" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vkG-78-D52" secondAttribute="bottom" constant="16" id="GFV-Pv-LKV"/>
+                            <constraint firstItem="vkG-78-D52" firstAttribute="leading" secondItem="abx-oP-yOb" secondAttribute="leading" constant="16" id="erF-fx-1Nd"/>
+                            <constraint firstItem="vkG-78-D52" firstAttribute="top" secondItem="abx-oP-yOb" secondAttribute="top" constant="20" id="mYA-vN-stm"/>
+                            <constraint firstItem="abx-oP-yOb" firstAttribute="trailing" secondItem="vkG-78-D52" secondAttribute="trailing" constant="16" id="rCd-Bd-WY9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Person info" id="Wiy-Sz-jLC"/>
+                    <connections>
+                        <outlet property="bDatePersonLabel" destination="d4S-bq-PP5" id="rhU-ur-hkN"/>
+                        <outlet property="hBPersonLabel" destination="Rby-5a-ooE" id="54E-Lr-kmA"/>
+                        <outlet property="imagePerson" destination="qvk-VX-3o7" id="k75-fK-yQ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v7o-5T-hJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1514.4000000000001" y="-88.605697151424295"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="person.2.square.stack.fill" catalog="system" width="113" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -16,12 +16,12 @@ class DataManager {
                    "Jacob", "Emma", "Olivia", "Sophia"
     ]
     
-    var surnameHB = ["Cox", "Ramirez", "Gray",
+    var surnamesHB = ["Cox", "Ramirez", "Gray",
                      "Howard", "Rogers", "Morgan",
                      "Murphy", "Bell", "Rivera", "Torres"
     ]
     
-    var birthdayDate = ["01.02.1992", "28.02.1987", "15.10.1990",
+    var birthdayDates = ["01.02.1992", "28.02.1987", "15.10.1990",
                         "05.03.1993", "18.02.1980", "17.09.1993",
                         "03.03.1990", "15.02.1995", "06.10.1989", "15.09.1993",
     ]
@@ -31,7 +31,7 @@ class DataManager {
                    "Jacob", "Emma", "Olivia", "Sophia"
     ]
     
-    var surnameIE = ["Cox", "Ramirez", "Gray",
+    var surnamesIE = ["Cox", "Ramirez", "Gray",
                      "Howard", "Rogers", "Morgan",
                      "Murphy", "Bell", "Rivera", "Torres"
     ]
@@ -42,7 +42,7 @@ class DataManager {
                   "apartment purchase", "apartment purchase"
     ]
     
-    var importantEventDate = ["01.02.1992", "28.02.1987", "15.10.1990",
+    var importantEventDates = ["01.02.1992", "28.02.1987", "15.10.1990",
                         "05.03.1993", "18.02.1980", "17.09.1993",
                         "03.03.1990", "15.02.1995", "06.10.1989", "15.09.1993",
     ]
